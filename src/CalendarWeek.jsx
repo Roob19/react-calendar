@@ -2,10 +2,9 @@ import React from 'react';
 
 function CalendarWeek(props) {
     return (
-            <td>
+            <span>
                 {props.days.name}
-                {props.dates}
-            </td>
+            </span>
     );
 }
 

@@ -34,7 +34,9 @@ function App() {
     <div className="App">
       <h1>React Calendar</h1>
         <hr/>
-      <calendar days={days} dates={dates}/>
+      <div>
+        <Calendar days={days} dates={dates}/>
+      </div>
     </div>
   );
 }

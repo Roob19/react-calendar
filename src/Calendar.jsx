@@ -1,18 +1,20 @@
 import React from 'react';
 import CalendarWeek from './CalendarWeek';
+import CalendarMonth from './CalendarMonth';
 
 function Calendar({days}) {
     return (
-        <table>
-            <tr>
-                {days.map((days, index) => 
+        <ul>
+            <li>{days.map((days, index) => 
                     <CalendarWeek days={days} index={index}/>
                 )}
-                {DataTransfer.map((dates, index) => 
-                    <CalendarWeek dates={dates} index={index}/>
+            </li>
+            <li>
+                {dates.map((dates, index) => 
+                    <CalendarMonth dates={dates} index={index}/>
                 )}
-            </tr>
-        </table>
+            </li>
+        </ul>
     );
 }
 
